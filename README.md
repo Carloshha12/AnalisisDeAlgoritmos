@@ -5,12 +5,12 @@ Trabajos prácticos y ejercicios de la materia **Análisis de Algoritmos**
 
 **Autor:** Carlos Gabriel Habiague
 
-## Proyectos
+## Ejercicios
 
-| Tema | Proyecto | Descripción |
-|---|---|---|
-| Recurrencias | [suma-multiplos](recurrencias/suma-multiplos) | Suma de múltiplos de 3 o 5: versión iterativa vs. recursiva, recurrencia y comparación empírica de tiempos |
-| Recurrencias | [relacion-de-recurrencia](recurrencias/relacion-de-recurrencia) | Solución recursiva con un solo `return`, cómo se obtiene su relación de recurrencia y su resolución por expansión |
+| Proyecto | Descripción |
+|---|---|
+| [fibonacci-tiempos](ejercicios/fibonacci-tiempos) | Fibonacci iterativo vs. recursivo: recurrencias, ecuación característica y comparación empírica de tiempos con archivo CSV |
+| [suma-multiplos](ejercicios/suma-multiplos) | Suma de múltiplos de 3 o 5: solución recursiva y su relación de recurrencia (más versiones con ciclo y con fórmula) |
 
 ## Estructura del repositorio
 
@@ -19,7 +19,7 @@ analisis-de-algoritmos/
 ├── README.md               ← este índice
 ├── .gitignore
 ├── _plantilla/             ← copiar esta carpeta para empezar un proyecto nuevo
-└── <tema>/
+└── ejercicios/
     └── <proyecto>/
         ├── README.md       ← enunciado, explicación, resultados y conclusiones
         ├── src/            ← código fuente .java
@@ -31,17 +31,16 @@ Cada proyecto es independiente: tiene su propio `src/` y se compila y ejecuta de
 ## Cómo ejecutar un proyecto
 
 ```bash
-cd recurrencias/suma-multiplos
+cd ejercicios/fibonacci-tiempos
 javac -d out src/*.java
 java -cp out PruebaTiempos
 ```
 
 ## Cómo agregar un proyecto nuevo
 
-1. Copiar `_plantilla/` dentro del tema que corresponda (crear la carpeta del tema si no existe)
-   y renombrarla. Por ejemplo: `ordenamiento/burbuja-vs-insercion/`.
+1. Copiar `_plantilla/` dentro de `ejercicios/` y renombrarla. Por ejemplo: `ejercicios/burbuja-vs-insercion/`.
 2. Escribir el código en `src/` y completar el `README.md` del proyecto.
-3. Agregar una fila a la tabla **Proyectos** de este README.
+3. Agregar una fila a la tabla **Ejercicios** de este README.
 4. Subir los cambios:
 
 ```bash
